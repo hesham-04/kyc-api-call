@@ -1,10 +1,10 @@
 # KYC API Call
 
-Simple Python script to call the KYC (Know Your Customer) API for user verification.
+Simple Python script to call the KYC (Know Your Customer) API for user verification. Just download and run the python file. It will return a URL that will contain the KYC flow for the UUID that was sent.
+Only one Session/KYC flow will be generated against each UUID.
 
 ## Configuration
 
-Update these values in [kyc-python.py](kyc-python.py):
 
 ```python
 BASE_URL = "http://nonabstemiously-stocky-cynthia.ngrok-free.dev"
