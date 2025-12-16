@@ -104,6 +104,7 @@ axios.post(url, data, { headers: headers })
 ## Important Notes
 
 - Replace `your_secret_key_here` with your actual API key
+- **Security Best Practice**: Use environment variables to store your API key instead of hardcoding it in your code
 - Replace the request body (`user_data`) with the actual data required by the API
 - Make sure to keep your API key secure and never commit it to version control
 - The endpoint is using ngrok, which provides temporary URLs. The domain may change over time
@@ -111,3 +112,18 @@ axios.post(url, data, { headers: headers })
 ## Response
 
 The API will return a JSON response with the verification status and details.
+
+### Expected Response Format
+
+```json
+{
+    "status": "success",
+    "message": "Verification initiated successfully",
+    "data": {
+        "verification_id": "unique_id",
+        "status": "pending"
+    }
+}
+```
+
+**Note**: The actual response structure may vary. Check with your API provider for the exact response format.
